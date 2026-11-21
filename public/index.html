@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Roster Management</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo">&#9638;</span><div><b>Smart Roster</b><small>Multi-brand ops scheduling</small></div></div>
+    <div class="month-nav">
+      <button class="icon" id="prevMonth" title="Previous month">&#8249;</button>
+      <input type="month" id="monthPicker" />
+      <button class="icon" id="nextMonth" title="Next month">&#8250;</button>
+      <span id="statusChip" class="chip"></span>
+    </div>
+    <div class="actions" id="headerActions"></div>
+  </header>
+  <nav class="tabs" id="tabs"></nav>
+  <main id="view"></main>
+  <div id="modalRoot"></div>
+  <div id="toasts"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

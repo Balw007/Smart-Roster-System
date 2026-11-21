@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: smart-roster
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 22.13.0
+      - key: DB_PATH
+        value: /tmp/roster.db   # free tier has no disk: data is re-seeded on each restart (fine for a demo)
